@@ -392,7 +392,7 @@ p {
 }
 
 .search-bar__submit:focus {
-  overflow: none;
+  outline: none;
 }
 
 .statistics {
@@ -1077,7 +1077,7 @@ p {
     margin-right: 5px;
   }
   .auth {
-    padding-right: 5;
+    padding-right: 5px;
   }
   .auth__item {
     padding: 5px;
@@ -1160,6 +1160,11 @@ p {
   text-decoration: none;
   text-transform: capitalize;
   font-size: 13px;
+  transition: color 0.3s ease;
+}
+
+.footer .column__item a:hover {
+  color: #919eb1;
 }
 
 .subscribe {
@@ -1180,7 +1185,7 @@ p {
   outline: none;
 }
 
-.subscribe__input:placeholder {
+.subscribe__input::placeholder {
   color: #919eb1;
 }
 
@@ -1193,7 +1198,7 @@ p {
 }
 
 .subscribe__button:focus {
-  overflow: none;
+  outline: none;
 }
 
 .subscribe__button i {
@@ -1265,7 +1270,6 @@ p {
 
 .slick-list.dragging {
   cursor: pointer;
-  cursor: hand;
 }
 
 .slick-slider .slick-track,
