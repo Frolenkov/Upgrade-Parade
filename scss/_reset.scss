@@ -132,7 +132,8 @@ table {
 html,
 body {
     height: 100%;
-    font-family: 'FontAwesome5Free', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+
 
 }
 
@@ -148,7 +149,7 @@ body {
 .page {
     overflow: hidden;
     min-height: 100%;
-    color: #222222
+    color: #1f373d;
 }
 
 .container {
@@ -159,52 +160,99 @@ body {
 }
 
 @font-face {
-    font-family: 'Font Awesome5Free';
-    src: url('../FontAwesome5Free-Regular.woff2') format('woff2'),
-        url('../FontAwesome5Free-Regular.woff') format('woff');
-    font-weight: normal;
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?tsjlfu');
+  src:  url('../fonts/icomoon.eot?tsjlfu#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?tsjlfu') format('truetype'),
+    url('../fonts/icomoon.woff?tsjlfu') format('woff'),
+    url('../fonts/icomoon.svg?tsjlfu#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow:before {
+  content: "\e900";
+  color: #919eb1;
+}
+.icon-bed:before {
+  content: "\e901";
+}
+.icon-dribbble:before {
+  content: "\e902";
+}
+.icon-facebook:before {
+  content: "\e903";
+}
+.icon-location1:before {
+  content: "\e904";
+  color: #fff;
+}
+.icon-phone1:before {
+  content: "\e905";
+  color: #fff;
+}
+.icon-search1:before {
+  content: "\e906";
+  color: #919eb1;
+}
+.icon-shower:before {
+  content: "\e907";
+}
+.icon-twitter:before {
+  content: "\e908";
+}
+
+
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-SemiBold.woff2') format('woff2'),
+        url('../fonts/Montserrat-SemiBold.woff') format('woff');
+    font-weight: 600;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'icomoon';
-    src: url('../fonts/icomoon.eot?rbyuyk');
-    src: url('../fonts/icomoon.eot?rbyuyk#iefix') format('embedded-opentype'),
-        url('../fonts/icomoon.ttf?rbyuyk') format('truetype'),
-        url('../fonts/icomoon.woff?rbyuyk') format('woff'),
-        url('../fonts/icomoon.svg?rbyuyk#icomoon') format('svg');
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Medium.woff2') format('woff2'),
+        url('../fonts/Montserrat-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Bold.woff2') format('woff2'),
+        url('../fonts/Montserrat-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Regular.woff2') format('woff2'),
+        url('../fonts/Montserrat-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-    font-display: block;
+    font-display: swap;
 }
 
-[class^="icon-"],
-[class*=" icon-"] {
-    font-family: 'icomoon' !important;
-    speak: never;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-.icon-facebook:before {
-    content: "\ea90";
-}
-
-.icon-instagram:before {
-    content: "\ea92";
-}
-
-.icon-twitter:before {
-    content: "\ea96";
-}
-
-.icon-linkedin:before {
-    content: "\eac9";
-}
